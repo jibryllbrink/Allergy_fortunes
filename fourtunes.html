@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <form action="/allergies-submit" method="POST">
+    <fieldset>
+        <legend >Survey for Allergies</legend>
+            <p>What is your full name?</p>
+            First name:<br>
+            <input type="text" name="firstname"><br>
+             Last name:<br>
+            <input type="text" name="lastname"><br>
+            <p>Are you Male or Female?</p>
+            <input type="radio" name="gender" value="male" checked> Male<br>
+            <input type="radio" name="gender" value="female"> Female<br>
+            <input type="radio" name="gender" value="other"> Other<br>
+            <p>Do you have any allergies to the following?(Select all that apply)</p>
+            <select name="Allergies" multiple>
+                    <option value="trees">Trees</option>
+                    <option value="nuts">Nuts</option>
+                    <option value="dairy">Dairy</option>
+                    <option value="fish">Fish</option>
+                    <option value="soy">Soy</option>
+                    <option value="eggs">Eggs</option>
+                    <option value="wheat">Wheat</option>
+                  </select><br>
+                <p>Please tell us about any other allergies.</p>
+            <textarea name="message" rows="10" cols="30"></textarea><br>
+            <input type="submit" value="Submit" />
+    </fieldset>
+    </form>
+</body>
+</html>
